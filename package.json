@@ -4,6 +4,8 @@
   "description": "",
   "license": "MIT",
   "version": "0.0.1",
+  "repository": "https://github.com/sunaoka/json-unescaped-unicode",
+  "publisher": "sunaoka",
   "engines": {
     "vscode": "^1.78.0"
   },
