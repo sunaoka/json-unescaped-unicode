@@ -1,9 +1,9 @@
 {
   "name": "json-unescaped-unicode",
   "displayName": "JSON Unescaped Unicode",
-  "description": "",
+  "description": "Unescape Unicode-escaped JSON",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "https://github.com/sunaoka/json-unescaped-unicode",
   "publisher": "sunaoka",
   "engines": {
@@ -12,6 +12,7 @@
   "categories": [
     "Other"
   ],
+  "icon": "icon.png",
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
