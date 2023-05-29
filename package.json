@@ -1,0 +1,60 @@
+{
+  "name": "json-unescaped-unicode",
+  "displayName": "JSON Unescaped Unicode",
+  "description": "",
+  "license": "MIT",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "json-unescaped-unicode.run",
+        "title": "JSON Unescaped Unicode",
+        "category": "JSON"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "when": "resourceLangId == json",
+          "command": "json-unescaped-unicode.run"
+        }
+      ],
+      "editor/context": [
+        {
+          "when": "resourceLangId == json",
+          "command": "json-unescaped-unicode.run",
+          "group": "1_modification"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.78.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.4",
+    "@vscode/test-electron": "^2.3.0"
+  }
+}
