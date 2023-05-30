@@ -2,6 +2,11 @@
   "name": "json-unescaped-unicode",
   "displayName": "JSON Unescaped Unicode",
   "description": "Unescape Unicode-escaped JSON",
+  "keywords": [
+    "JSON",
+    "Unicode",
+    "Unescape"
+  ],
   "license": "MIT",
   "version": "0.0.2",
   "repository": "https://github.com/sunaoka/json-unescaped-unicode",
