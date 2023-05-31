@@ -4,7 +4,7 @@ Unescape Unicode-escaped JSON.
 
 ## Features
 
-![Features](demo.gif)
+![Features](assets/demo.gif)
 
 ## From
 
