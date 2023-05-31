@@ -8,5 +8,8 @@ vsc-extension-quickstart.md
 **/.eslintrc.json
 **/*.map
 **/*.ts
-assets
 .c8rc
+assets/**
+coverrage/**
+out/test/**
+.github/**
