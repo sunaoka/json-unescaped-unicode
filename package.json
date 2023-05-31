@@ -51,7 +51,8 @@
     "pretest": "yarn run compile && yarn run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
-    "coverage": "c8 --check-coverage yarn run test"
+    "coverage": "c8 --check-coverage yarn run test",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
