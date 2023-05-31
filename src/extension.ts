@@ -10,7 +10,7 @@ const getIndentCharacters = () => {
 
 export function activate(context: vscode.ExtensionContext) {
 
-	let disposable = vscode.commands.registerCommand('json-unescaped-unicode.run', () => {
+	let disposable = vscode.commands.registerCommand('json-unescaped-unicode.run', async () => {
 		const editor = vscode.window.activeTextEditor;
 		if (!editor) {
 			return;
@@ -20,10 +20,9 @@ export function activate(context: vscode.ExtensionContext) {
 
 		const json = JSON.parse(document.getText());
 
-		editor?.edit(edit => {
+		await editor.edit(edit => {
 			const range = new vscode.Range(document.lineAt(0).range.start, document.lineAt(document.lineCount - 1).range.end);
 			edit.replace(range, JSON.stringify(json, null, getIndentCharacters()));
-		}).then(() => {
 		});
 	});
 
