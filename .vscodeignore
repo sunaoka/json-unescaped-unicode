@@ -10,6 +10,6 @@ vsc-extension-quickstart.md
 **/*.ts
 .c8rc
 assets/**
-coverrage/**
+coverage/**
 out/test/**
 .github/**
