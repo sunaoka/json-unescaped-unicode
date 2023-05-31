@@ -29,19 +29,26 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Run test suite (${{ runner.os }})
+      - name: Run test suite
+        if: runner.os == 'Linux'
+        run: xvfb-run -a yarn run test
+        env:
+          CODE_VERSION: ${{ matrix.vscode }}
+
+      - name: Run test suite
+        if: runner.os != 'Linux'
+        run: yarn run test
+        env:
+          CODE_VERSION: ${{ matrix.vscode }}
+
+      - name: Generate coverage reports
+        if: runner.os == 'Linux'
         run: xvfb-run -a yarn run coverage
         env:
-          CODE_VERSION: ${{ matrix.vscode }}
-        if: runner.os == 'Linux'
-
-      - name: Run test suite (${{ runner.os }})
-        run: yarn run coverage
-        env:
-          CODE_VERSION: ${{ matrix.vscode }}
-        if: runner.os != 'Linux'
+          CODE_VERSION: 'stable'
 
       - name: Upload coverage reports to Codecov
+        if: runner.os == 'Linux'
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
