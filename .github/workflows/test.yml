@@ -42,13 +42,13 @@ jobs:
           CODE_VERSION: ${{ matrix.vscode }}
 
       - name: Generate coverage reports
-        if: runner.os == 'Linux'
+        if: runner.os == 'Linux' && matrix.os == 'ubuntu-latest'
         run: xvfb-run -a yarn run coverage
         env:
           CODE_VERSION: 'stable'
 
       - name: Upload coverage reports to Codecov
-        if: runner.os == 'Linux'
+        if: runner.os == 'Linux' && matrix.os == 'ubuntu-latest'
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
