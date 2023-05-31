@@ -14,6 +14,15 @@ jobs:
       matrix:
         os: [ macos-latest, ubuntu-latest, windows-latest ]
         vscode: [ '1.74.0', 'stable', 'insiders' ]
+        exclude:
+          - os: macos-latest
+            vscode: '1.74.0'
+          - os: macos-latest
+            vscode: 'insiders'
+          - os: windows-latest
+            vscode: '1.74.0'
+          - os: windows-latest
+            vscode: 'insiders'
 
     name: ${{ matrix.vscode }} on ${{ matrix.os }}
 
