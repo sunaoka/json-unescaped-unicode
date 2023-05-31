@@ -63,7 +63,11 @@ suite('Test Suite', () => {
 
 		await vscode.commands.executeCommand('json-unescaped-unicode.run');
 
-		assert.strictEqual(editor.document.getText(), expected.replace(/\t/g, ' '.repeat(editor.options.tabSize)));
+		assert.strictEqual(
+			editor.document.getText(),
+			expected.replace(/\t/g, ' '.repeat(editor.options.tabSize))
+					.replace(/\n/g, newDocument.eol === vscode.EndOfLine.LF ? '\n' : '\r\n')
+		);
 	});
 
 	test('When pressing Tab insert tab', async () => {
@@ -82,6 +86,9 @@ suite('Test Suite', () => {
 		editor.options.insertSpaces = false;
 
 		await vscode.commands.executeCommand('json-unescaped-unicode.run');
-		assert.strictEqual(editor.document.getText(), expected);
+		assert.strictEqual(
+			editor.document.getText(),
+			expected.replace(/\n/g, newDocument.eol === vscode.EndOfLine.LF ? '\n' : '\r\n')
+		);
 	});
 });
