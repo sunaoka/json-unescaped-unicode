@@ -1,5 +1,11 @@
 # JSON Unescaped Unicode
 
+[![Version](https://img.shields.io/visual-studio-marketplace/v/sunaoka.json-unescaped-unicode)](https://marketplace.visualstudio.com/items?itemName=sunaoka.json-unescaped-unicode)
+[![Test](https://github.com/sunaoka/json-unescaped-unicode/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/sunaoka/json-unescaped-unicode/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/sunaoka/json-unescaped-unicode/branch/main/graph/badge.svg?token=ajoLI328xK)](https://codecov.io/gh/sunaoka/json-unescaped-unicode)
+
+----
+
 Unescape Unicode-escaped JSON.
 
 ## Features
