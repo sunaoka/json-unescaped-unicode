@@ -86,6 +86,7 @@ suite('Test Suite', () => {
 		editor.options.insertSpaces = false;
 
 		await vscode.commands.executeCommand('json-unescaped-unicode.run');
+
 		assert.strictEqual(
 			editor.document.getText(),
 			expected.replace(/\n/g, newDocument.eol === vscode.EndOfLine.LF ? '\n' : '\r\n')

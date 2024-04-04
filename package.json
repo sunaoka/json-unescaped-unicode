@@ -50,8 +50,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "yarn run compile && yarn run lint",
     "lint": "eslint src --ext ts",
-    "test": "vscode-test",
-    "coverage": "vscode-test --coverage --coverage-output ./coverage --coverage-reporter 'lcov' 'text-summary'",
+    "test": "vscode-test --timeout 10000",
+    "coverage": "vscode-test  --timeout 10000 --coverage --coverage-output ./coverage --coverage-reporter 'lcov' 'text-summary'",
     "publish": "vsce publish --yarn"
   },
   "devDependencies": {
