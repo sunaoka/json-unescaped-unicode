@@ -51,7 +51,7 @@
     "pretest": "yarn run compile && yarn run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test",
-    "coverage": "c8 --check-coverage yarn run test",
+    "coverage": "vscode-test --coverage --coverage-output ./coverage --coverage-reporter 'lcov' 'text-summary'",
     "publish": "vsce publish --yarn"
   },
   "devDependencies": {
@@ -63,7 +63,6 @@
     "@typescript-eslint/parser": "^7.5.0",
     "@vscode/test-cli": "^0.0.9",
     "@vscode/test-electron": "^2.3.9",
-    "c8": "^9.1.0",
     "eslint": "^8.57.0",
     "glob": "^10.3.12",
     "mocha": "^10.4.0",
