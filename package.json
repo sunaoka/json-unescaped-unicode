@@ -24,7 +24,7 @@
     "commands": [
       {
         "command": "json-unescaped-unicode.run",
-        "title": "JSON Unescaped Unicode",
+        "title": "%json-unescaped-unicode.run.title%",
         "category": "JSON"
       }
     ],
@@ -39,7 +39,7 @@
         {
           "when": "resourceLangId == json",
           "command": "json-unescaped-unicode.run",
-          "group": "1_modification"
+          "group": "1_modification@99"
         }
       ]
     }
