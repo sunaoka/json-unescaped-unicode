@@ -6,7 +6,7 @@
 
 ----
 
-Unescape Unicode-escaped JSON.
+Unescape Unicode Escape Sequences in JSON.
 
 ## Features
 
