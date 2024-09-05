@@ -36,7 +36,11 @@ jobs:
           node-version: 18.x
 
       - name: Install dependencies
-        run: yarn
+        uses: nick-fields/retry@v3
+        with:
+          timeout_seconds: 30
+          max_attempts: 3
+          command: yarn
 
       - name: Run test suite
         if: runner.os == 'Linux'
