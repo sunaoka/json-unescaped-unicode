@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron: '30 6 * * *'
+    - cron: '30 6 * * 0'
 
 jobs:
   test:
@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies
         uses: nick-fields/retry@v3
         with:
-          timeout_seconds: 30
+          timeout_seconds: 60
           max_attempts: 3
           command: yarn
 
