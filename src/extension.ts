@@ -20,6 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
 		await activeTextEditor.edit(editBuilder => {
 			const range = new vscode.Range(document.lineAt(0).range.start, document.lineAt(document.lineCount - 1).range.end);
 			editBuilder.replace(range, JSON.stringify(json, null, getIndentCharacters()));
+			activeTextEditor.selection = new vscode.Selection(new vscode.Position(0, 0), new vscode.Position(0, 0));
 		});
 	});
 

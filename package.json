@@ -8,7 +8,7 @@
     "Unescape"
   ],
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/sunaoka/json-unescaped-unicode",
   "publisher": "sunaoka",
   "engines": {
@@ -45,27 +45,26 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "yarn run compile",
+    "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "yarn run compile && yarn run lint",
+    "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test --timeout 10000",
-    "coverage": "vscode-test  --timeout 10000 --coverage --coverage-output ./coverage --coverage-reporter 'lcov' 'text-summary'",
-    "publish": "vsce publish --yarn"
+    "coverage": "vscode-test --timeout 10000 --coverage --coverage-output ./coverage --coverage-reporter 'lcov' 'text-summary'",
+    "publish": "vsce publish"
   },
   "devDependencies": {
-    "@types/glob": "^8.1.0",
-    "@types/mocha": "^10.0.6",
-    "@types/node": "18.x",
-    "@types/vscode": "^1.74.0",
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
-    "@typescript-eslint/parser": "^7.5.0",
-    "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.3.9",
-    "eslint": "^8.57.0",
-    "glob": "^10.3.12",
-    "typescript": "^5.4.3",
-    "vsce": "^2.15.0"
+    "@types/mocha": "^10.0.10",
+    "@types/node": "25.1.0",
+    "@types/vscode": "1.74.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "@vscode/vsce": "^3.7.1",
+    "eslint": "^9.39.2",
+    "glob": "^13.0.0",
+    "typescript": "^5.9.3"
   }
 }

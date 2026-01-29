@@ -2,7 +2,6 @@
 .vscode-test/**
 src/**
 .gitignore
-.yarnrc
 vsc-extension-quickstart.md
 **/tsconfig.json
 **/.eslintrc.json
@@ -14,3 +13,6 @@ assets/**
 coverage/**
 out/test/**
 .github/**
+.node-version
+pnpm-lock.yaml
+pnpm-workspace.yaml
