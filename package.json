@@ -55,17 +55,16 @@
     "publish": "vsce publish --pnpm"
   },
   "devDependencies": {
-    "@types/glob": "^8.1.0",
     "@types/mocha": "^10.0.10",
-    "@types/node": "22.15.29",
-    "@types/vscode": "^1.100.0",
-    "@typescript-eslint/eslint-plugin": "^8.33.1",
-    "@typescript-eslint/parser": "^8.33.1",
-    "@vscode/test-cli": "^0.0.11",
+    "@types/node": "25.1.0",
+    "@types/vscode": "^1.108.1",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "@vscode/test-cli": "^0.0.12",
     "@vscode/test-electron": "^2.5.2",
-    "@vscode/vsce": "^3.4.2",
-    "eslint": "^9.28.0",
-    "glob": "^11.0.2",
-    "typescript": "^5.8.3"
+    "@vscode/vsce": "^3.7.1",
+    "eslint": "^9.39.2",
+    "glob": "^13.0.0",
+    "typescript": "^5.9.3"
   }
 }
