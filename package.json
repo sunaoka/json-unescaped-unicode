@@ -8,7 +8,7 @@
     "Unescape"
   ],
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/sunaoka/json-unescaped-unicode",
   "publisher": "sunaoka",
   "engines": {
@@ -52,7 +52,7 @@
     "lint": "eslint src --ext ts",
     "test": "vscode-test --timeout 10000",
     "coverage": "vscode-test --timeout 10000 --coverage --coverage-output ./coverage --coverage-reporter 'lcov' 'text-summary'",
-    "publish": "vsce publish --pnpm"
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
