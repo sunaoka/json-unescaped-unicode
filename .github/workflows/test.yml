@@ -44,7 +44,7 @@ jobs:
         with:
           timeout_seconds: 60
           max_attempts: 3
-          command: pnpm
+          command: pnpm install
 
       - name: Run test suite
         if: runner.os == 'Linux'
