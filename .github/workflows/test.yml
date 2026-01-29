@@ -44,6 +44,7 @@ jobs:
         with:
           timeout_seconds: 60
           max_attempts: 3
+          command: pnpm
 
       - name: Run test suite
         if: runner.os == 'Linux'
