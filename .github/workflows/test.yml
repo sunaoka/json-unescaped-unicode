@@ -40,23 +40,23 @@ jobs:
         with:
           timeout_seconds: 60
           max_attempts: 3
-          command: yarn
+          command: pnpm
 
       - name: Run test suite
         if: runner.os == 'Linux'
-        run: xvfb-run -a yarn run test
+        run: xvfb-run -a pnpm run test
         env:
           CODE_VERSION: ${{ matrix.vscode }}
 
       - name: Run test suite
         if: runner.os != 'Linux'
-        run: yarn run test
+        run: pnpm run test
         env:
           CODE_VERSION: ${{ matrix.vscode }}
 
       - name: Generate coverage reports
         if: runner.os == 'Linux' && matrix.vscode == 'stable'
-        run: xvfb-run -a yarn run coverage
+        run: xvfb-run -a pnpm run coverage
         env:
           CODE_VERSION: 'stable'
 
