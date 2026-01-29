@@ -35,12 +35,15 @@ jobs:
         with:
           node-version: 22.x
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - name: Install dependencies
         uses: nick-fields/retry@v3
         with:
           timeout_seconds: 60
           max_attempts: 3
-          command: pnpm
 
       - name: Run test suite
         if: runner.os == 'Linux'
