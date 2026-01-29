@@ -45,14 +45,14 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "yarn run compile",
+    "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "yarn run compile && yarn run lint",
+    "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test --timeout 10000",
     "coverage": "vscode-test --timeout 10000 --coverage --coverage-output ./coverage --coverage-reporter 'lcov' 'text-summary'",
-    "publish": "vsce publish --yarn"
+    "publish": "vsce publish --pnpm"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
