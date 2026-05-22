@@ -28,23 +28,23 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22.x
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
         with:
-          version: 10
+          version: 11
       - name: Install dependencies
-        uses: nick-fields/retry@v3
+        uses: nick-fields/retry@v4
         with:
           timeout_seconds: 60
           max_attempts: 3
-          command: pnpm install
+          command: pnpm install --frozen-lockfile
 
       - name: Run test suite
         if: runner.os == 'Linux'
@@ -66,7 +66,7 @@ jobs:
 
       - name: Upload coverage reports to Codecov
         if: runner.os == 'Linux' && matrix.vscode == 'stable'
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v6
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage/lcov.info
