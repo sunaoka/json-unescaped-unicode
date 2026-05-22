@@ -8,7 +8,7 @@
     "Unescape"
   ],
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "https://github.com/sunaoka/json-unescaped-unicode",
   "publisher": "sunaoka",
   "engines": {
@@ -56,15 +56,15 @@
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
-    "@types/node": "25.1.0",
+    "@types/node": "^25.8.0",
     "@types/vscode": "1.74.0",
-    "@typescript-eslint/eslint-plugin": "^8.54.0",
-    "@typescript-eslint/parser": "^8.54.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/parser": "^8.59.3",
     "@vscode/test-cli": "^0.0.12",
     "@vscode/test-electron": "^2.5.2",
-    "@vscode/vsce": "^3.7.1",
-    "eslint": "^9.39.2",
-    "glob": "^13.0.0",
-    "typescript": "^5.9.3"
+    "@vscode/vsce": "^3.9.1",
+    "eslint": "^10.3.0",
+    "glob": "^13.0.6",
+    "typescript": "^6.0.3"
   }
 }
