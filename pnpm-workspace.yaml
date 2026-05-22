@@ -1,3 +1,11 @@
-onlyBuiltDependencies:
-  - '@vscode/vsce-sign'
-  - keytar
+allowBuilds:
+  '@vscode/vsce-sign': true
+  keytar: true
+
+minimumReleaseAge: 10080
+
+trustPolicy: no-downgrade
+
+trustPolicyExclude:
+  - chokidar@4.0.3
+  - semver@5.7.2
