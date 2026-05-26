@@ -9,3 +9,6 @@ trustPolicy: no-downgrade
 trustPolicyExclude:
   - chokidar@4.0.3
   - semver@5.7.2
+
+overrides:
+  '@types/vscode': '1.74.0'
