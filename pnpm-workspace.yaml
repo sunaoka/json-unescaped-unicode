@@ -15,5 +15,6 @@ trustPolicyExclude:
 overrides:
   '@types/node': '^24.0.0'
   '@types/vscode': '1.74.0'
+  'serialize-javascript': '^7.0.5'
 
 verifyDepsBeforeRun: false

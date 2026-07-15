@@ -60,12 +60,12 @@
     "@types/mocha": "^10.0.10",
     "@types/node": "^24.13.2",
     "@types/vscode": "1.74.0",
-    "@typescript-eslint/eslint-plugin": "^8.62.0",
-    "@typescript-eslint/parser": "^8.62.0",
+    "@typescript-eslint/eslint-plugin": "^8.63.0",
+    "@typescript-eslint/parser": "^8.63.0",
     "@vscode/test-cli": "^0.0.15",
     "@vscode/test-electron": "^3.0.0",
     "@vscode/vsce": "^3.9.2",
-    "eslint": "^10.5.0",
+    "eslint": "^10.6.0",
     "glob": "^13.0.6",
     "typescript": "^6.0.3"
   }
