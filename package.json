@@ -8,7 +8,7 @@
     "Unescape"
   ],
   "license": "MIT",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "repository": "https://github.com/sunaoka/json-unescaped-unicode",
   "publisher": "sunaoka",
   "engines": {
