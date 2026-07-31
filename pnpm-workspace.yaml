@@ -1,10 +1,13 @@
 allowBuilds:
-  '@vscode/vsce-sign': true
+  "@vscode/vsce-sign": true
   keytar: true
 
 engineStrict: true
 
 minimumReleaseAge: 10080
+
+minimumReleaseAgeExclude:
+  - '@vscode/test-electron@3.1.0'
 
 trustPolicy: no-downgrade
 
@@ -13,8 +16,9 @@ trustPolicyExclude:
   - semver@5.7.2
 
 overrides:
-  '@types/node': '^24.0.0'
-  '@types/vscode': '1.74.0'
-  'serialize-javascript': '^7.0.5'
+  "@types/node": "^24.0.0"
+  "@types/vscode": "1.74.0"
+  "serialize-javascript": "^7.0.5"
+  "typescript": "^6.0.3"
 
 verifyDepsBeforeRun: false
