@@ -6,9 +6,6 @@ engineStrict: true
 
 minimumReleaseAge: 10080
 
-minimumReleaseAgeExclude:
-  - '@vscode/test-electron@3.1.0'
-
 trustPolicy: no-downgrade
 
 trustPolicyExclude:
