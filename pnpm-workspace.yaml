@@ -6,6 +6,9 @@ engineStrict: true
 
 minimumReleaseAge: 10080
 
+minimumReleaseAgeExclude:
+  - fast-uri@3.1.5
+
 trustPolicy: no-downgrade
 
 trustPolicyExclude:
@@ -15,6 +18,7 @@ trustPolicyExclude:
 overrides:
   "@types/node": "^24.0.0"
   "@types/vscode": "1.74.0"
+  "fast-uri": "^3.1.5"
   "serialize-javascript": "^7.0.5"
   "typescript": "^6.0.3"
 
