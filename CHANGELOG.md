@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.0.7] - 2026-08-05
+
+- Update dependencies
+
 ## [1.0.6] - 2026-07-31
 
 - Update dependencies
@@ -31,7 +35,8 @@
 
 - Initial release
 
-[Unreleased]: https://github.com/sunaoka/json-unescaped-unicode/compare/v1.0.6...HEAD
+[Unreleased]: https://github.com/sunaoka/json-unescaped-unicode/compare/v1.0.7...HEAD
+[1.0.7]: https://github.com/sunaoka/json-unescaped-unicode/compare/v1.0.6...v1.0.7
 [1.0.6]: https://github.com/sunaoka/json-unescaped-unicode/compare/v1.0.5...v1.0.6
 [1.0.5]: https://github.com/sunaoka/json-unescaped-unicode/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/sunaoka/json-unescaped-unicode/compare/v1.0.3...v1.0.4
