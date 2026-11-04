@@ -6,8 +6,6 @@ engineStrict: true
 
 minimumReleaseAge: 10080
 
-minimumReleaseAgeExclude:
-
 trustPolicy: no-downgrade
 
 trustPolicyExclude:
